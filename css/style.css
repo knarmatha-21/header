@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.headerSec{
+    position: relative;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.mobileMenuItem,
+.mobileMenuItem:hover,
+.mobileMenuItem:focus,
+.mobileMenuItem:active,
+.mobileMenuItem:active:hover {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    color: var(--black-color);
+}  
+    
+.mobileCloseBtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 35px;
+}
+
+.mobileMenuList{
+    list-style-type: none;
+}
+
+.mobileMenu{
+    padding: 0;
+}
+
+.mobileHeader{
+    display: none !important;
+}
+
+.openBtn{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+}
+
+.headerFlex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:10px;
+}
+
+@media screen and (max-width:767.98px) {
+  
+}
+
+@media screen and (max-width:991.98px) {
+    .mobileHeader{
+        display: block !important;
+    }
+    .header{
+        display: none !important;
+    }
+}
